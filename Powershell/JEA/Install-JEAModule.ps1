@@ -77,10 +77,6 @@ function Install-JEAModule {
         }
         $hPSSCParameters = if ($PSSCParameters) { $PSSCParameters } else { ConvertFrom-Json $jsonPSSCParameters | ConvertTo-Hashtable }
         $hPSRCParameters = if ($PSRCParameters) { $PSRCParameters } else { ConvertFrom-Json $jsonPSRCParameters | ConvertTo-Hashtable }
-
-        #$jsonPSSCParameters | Write-Host
-
-        #$jsonPSRCParameters | Write-Host
     }
     Process{
         if ($ComputerName -or $Session) {
